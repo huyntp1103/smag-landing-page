@@ -1,0 +1,2 @@
+# smag
+smag landing page
