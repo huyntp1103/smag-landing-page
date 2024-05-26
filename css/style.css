@@ -1,0 +1,212 @@
+:root {
+  --dark-orange: #FF4500;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#navbar .navbar-brand a {
+  padding: 0;
+  margin: 0 0.4rem;
+}
+
+#navbar #navbarNav .nav-item {
+  padding: 0;
+  margin: 0 0.4rem;
+}
+
+#navbar #navbarNav .active {
+  border-bottom: 0.3rem solid var(--dark-orange);
+}
+
+#navbar #navbarNav .nav-item:hover .nav-link {
+  color: black;
+}
+
+#navbar #navbarNav .nav-item .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* End of Navbar */
+
+/* Hero section */
+.hero-section {
+  position: relative;
+  text-align: center;
+  height: 48.4vw;
+}
+
+.hero-section .background-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
+.hero-section .hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-section .hero-buttons .btn {
+  width: 10vw;
+  font-size: 1.4vw;
+  font-weight: bold;
+  /* padding: 0.6rem 0.8rem; */
+  padding: 0.6vw 0.8vw;
+  margin: 0 4vw;
+  border-radius: 50%;
+  background-color: orange;
+  border-color: orange;
+}
+/* End of Hero section */
+
+/* About Margroup section */
+#about-margroup .row {
+  display: flex;
+  align-items: center;
+}
+
+#about-margroup h1 {
+  color: var(--dark-orange);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#about-margroup .content-box {
+  border: 0.5rem solid var(--dark-orange);
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+#about-margroup .row .carousel-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+/* End of About Margroup section */
+
+/* Timeline section */
+#timeline-header h1 {
+  color: var(--dark-orange);
+  font-size: 3rem;
+  font-weight: bold;
+}
+/* End of Timeline section */
+
+/* Stats section */
+#stats .stats-number {
+  font-size: 3rem;
+  color: var(--dark-orange);
+  font-weight: bold;
+}
+
+#stats {
+  padding: 1rem 0;
+}
+
+#stats h2 {
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin: 30px 0 60px;
+}
+
+#stats h2::after {
+  content: "";
+  width: 140px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: var(--dark-orange);
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  opacity: .8;
+}
+/* End of Stats section */
+
+/* Testimonials section */
+#testimonials .carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+
+#testimonials .carousel-item {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 290px;
+}
+
+#testimonials .carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+#testimonials .carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+#testimonials .carousel .testimonial {
+  padding: 30px 0 10px;
+}
+
+#testimonials .carousel .overview {
+  font-style: italic;
+}
+
+#testimonials .carousel .overview b {
+  text-transform: uppercase;
+  color: #db584e;
+}
+
+#testimonials .carousel .carousel-control {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+}
+
+#testimonials .carousel-control i {
+  font-size: 68px;
+  line-height: 42px;
+  position: absolute;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+/* End of Testimonials section */
