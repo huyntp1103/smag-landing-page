@@ -17,25 +17,6 @@ $(document).ready(function() {
   });
 });
 
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  autoplay: true,
-  autoplayTimeout: 1 * 1000,
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 3
-    }
-  }
-})
-
 document.addEventListener('DOMContentLoaded', function () {
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -64,3 +45,53 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(element);
   });
 });
+
+$('.large-sponsor .owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2 * 1000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    576: {
+      items: 2
+    },
+    768: {
+      items: 3
+    },
+    992: {
+      items: 4
+    },
+    1200: {
+      items: 6
+    }
+  }
+})
+
+$('.small-sponsor .owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2 * 1000,
+  responsive: {
+    0: {
+      items: 3
+    },
+    576: {
+      items: 4
+    },
+    768: {
+      items: 6
+    },
+    992: {
+      items: 8
+    },
+    1200: {
+      items: 12
+    }
+  }
+})

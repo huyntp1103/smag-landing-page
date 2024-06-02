@@ -2,6 +2,7 @@
   --dark-orange: #b85d36;
   --dark-red: #af2d03;
   --cream-white: #ebe8e1;
+  --cream-orange: #d6cdb0;
 }
 
 html {
@@ -30,7 +31,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white;
+  background-color: var(--cream-white);
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -168,6 +169,29 @@ body {
   opacity: .8;
 }
 /* End of Stats section */
+
+/* Sponsor section */
+#sponsor h1 {
+  color: var(--dark-orange);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#sponsor .sponsor-logo {
+  width: 100%;
+  background-color: var(--cream-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid black;
+  aspect-ratio: 1/1;
+}
+
+#sponsor .sponsor-logo img {
+  width: 80%;
+}
+/* End of Sponsor section */
 
 /* Testimonials section */
 #testimonials .carousel {
