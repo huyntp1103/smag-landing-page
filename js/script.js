@@ -95,3 +95,35 @@ $('.small-sponsor .owl-carousel').owlCarousel({
     }
   }
 })
+
+$(document).ready(function() {
+  $('.filter-button-group').on('click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('.our-works-item').hide().filter(function() {
+      if (filterValue === '*')
+        return true;
+      return $(this).data('category').split(' ').includes(filterValue);
+    }).show();
+  });
+});
+
+$(document).ready(function() {
+  var containerHeight = $('.our-works-item').height();
+  var imageHeight = $('.our-works-item img').height();
+  var infoHeight = containerHeight - imageHeight;
+  $('.our-works-info').height(infoHeight);
+});
+
+$(document).ready(function() {
+  $('.our-works-filter-button:first').addClass('active');
+
+  $('.our-works-filter-button').click(function() {
+    $('.our-works-filter-button').removeClass('active');
+
+    $(this).addClass('active');
+  });
+});
+
+// TODOS:
+// 1. Add effect for filter our work
+// 2. Add effect for hero section
