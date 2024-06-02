@@ -1,5 +1,7 @@
 :root {
-  --dark-orange: #FF4500;
+  --dark-orange: #b85d36;
+  --dark-red: #af2d03;
+  --cream-white: #ebe8e1;
 }
 
 html {
@@ -7,16 +9,16 @@ html {
 }
 
 body {
-  background-color: #fff6e0;
+  background-color: var(--cream-white);
 }   
 
-@media (max-width: 1200px) {
+@media (max-width: 1199) {
   html {
     font-size: 14px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     font-size: 12px;
   }
@@ -110,10 +112,12 @@ body {
 }
 
 #about-margroup .content-box {
-  border: 0.5rem solid var(--dark-orange);
-  padding: 1rem;
+  padding: 1rem 1.6rem;
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  background-image: url('../img/About-Margroup-background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 #about-margroup .row .carousel-item img {
@@ -191,7 +195,6 @@ body {
 #testimonials .carousel .quote {
   font-size: 5rem;
   color: orange;
-  /* border: 1px solid orange; */
 }
 
 #testimonials .carousel .testimonial {
@@ -200,12 +203,30 @@ body {
 }
 
 #testimonials .carousel .overview {
-  font-style: italic;
+  color: var(--dark-orange);
+  background-color: white;
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
-#testimonials .carousel .overview b {
-  text-transform: uppercase;
-  color: #db584e;
+#testimonials .carousel .project {
+  background-color: var(--dark-orange);
+  color: white;
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+#testimonials .carousel .testimonial {
+  text-align: justify;
+  padding: 1rem;
+  font-size: 1.4rem;
 }
 
 #testimonials .carousel .carousel-control {
@@ -221,8 +242,7 @@ body {
   line-height: 42px;
   position: absolute;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+  color: var(--dark-orange);
 }
 /* End of Testimonials section */
 
