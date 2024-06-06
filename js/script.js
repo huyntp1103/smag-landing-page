@@ -120,18 +120,23 @@ $(document).ready(function() {
 
   $('.our-works-filter-button').click(function() {
     $('.our-works-filter-button').removeClass('active');
-
     $(this).addClass('active');
   });
 
-  $('#navbar .navbar-nav .nav-item .nav-link').click(function() {
+  $('#navbar .navbar-nav .nav-item .nav-link').click(function(event) {
     $('#navbar .navbar-nav .nav-item .nav-link').removeClass('active');
-
     $(this).addClass('active');
+
+    event.preventDefault();
+    var targetId = $(this).attr('href');
+    var targetPosition = $(targetId).offset().top;
+    if (targetId !== '#image-slider-home' && targetId !== '#footer') {
+      targetPosition -= $('#navbar').outerHeight(true);
+    }
+    $('html, body').animate({ scrollTop: targetPosition }, 1 * 1000);
   });
 });
 
 // TODOS:
 // 1. Add effect for filter our work
 // 2. Add effect for hero section
-// 3. Add effect for scrolling when click on navbar-link
