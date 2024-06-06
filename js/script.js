@@ -5,14 +5,14 @@ $(document).ready(function () {
 
 $(document).ready(function() {
   $('#image-slider-home').carousel({
-    interval: 5 * 1000,
+    interval: 8 * 1000,
     pause: false
   });
 });
 
 $(document).ready(function() {
   $('#image-slider-about').carousel({
-    interval: 2 * 1000,
+    interval: 5 * 1000,
     pause: false
   });
 });
@@ -116,9 +116,16 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.our-works-filter-button:first').addClass('active');
+  $('#navbar .navbar-nav .nav-item .nav-link:first').addClass('active');
 
   $('.our-works-filter-button').click(function() {
     $('.our-works-filter-button').removeClass('active');
+
+    $(this).addClass('active');
+  });
+
+  $('#navbar .navbar-nav .nav-item .nav-link').click(function() {
+    $('#navbar .navbar-nav .nav-item .nav-link').removeClass('active');
 
     $(this).addClass('active');
   });
@@ -127,3 +134,4 @@ $(document).ready(function() {
 // TODOS:
 // 1. Add effect for filter our work
 // 2. Add effect for hero section
+// 3. Add effect for scrolling when click on navbar-link
