@@ -21,13 +21,13 @@ body {
 	background-color: var(--cream-white);
 }
 
-@media (max-width: 1199) {
+@media (max-width: 991) {
 	html {
 		font-size: 14px;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480) {
 	html {
 		font-size: 12px;
 	}
