@@ -1,0 +1,49 @@
+#our-works .our-works-filter-button {
+	background-color: gray;
+	border: none;
+	border-radius: 1rem;
+	color: white;
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+
+#our-works .our-works-filter-button:hover {
+	text-decoration: underline;
+}
+
+#our-works .our-works-filter-button.active {
+	background-color: var(--dark-orange);
+}
+
+#our-works .our-works-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+#our-works .our-works-item {
+	height: 400px;
+	background-color: var(--dark-orange);
+	padding: 0;
+	flex: 1 1 calc(50% - 1rem);
+	border-radius: 0 0 2rem 2rem;
+}
+
+#our-works .our-works-info {
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#our-works .our-works-description {
+	color: var(--yellow);
+	font-size: 1.2rem;
+}
+
+#our-works .our-works-metadata {
+	text-align: right;
+	color: white;
+}

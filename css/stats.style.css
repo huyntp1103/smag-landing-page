@@ -1,0 +1,31 @@
+#stats .stats-number {
+	font-size: 3rem;
+	color: var(--dark-orange);
+	font-weight: bold;
+}
+
+#stats {
+	padding: 1rem 0;
+}
+
+#stats h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+
+#stats h2::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: var(--dark-orange);
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	opacity: .8;
+}

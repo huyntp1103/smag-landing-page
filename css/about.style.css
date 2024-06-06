@@ -1,0 +1,25 @@
+#about-margroup .row {
+	display: flex;
+	align-items: center;
+}
+
+#about-margroup h1 {
+	color: var(--dark-orange);
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+#about-margroup .content-box {
+	padding: 1rem 1.6rem;
+	text-align: justify;
+	font-size: 1.5rem;
+	background-image: url('../img/About-Margroup-background.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#about-margroup .row .carousel-item img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+}

@@ -5,7 +5,7 @@
 #main-timeline:before {
     content: "";
     display: block;
-    width: 2px;
+    width: 0.2rem;
     height: 100%;
     background: var(--dark-orange);
     margin: 0 auto;
@@ -44,7 +44,7 @@
 #main-timeline .date-content:before {
     content: "";
     width: 36.5%;
-    height: 2px;
+    height: 0.2rem;
     background: var(--dark-orange);
     margin: auto 0;
     position: absolute;
@@ -54,8 +54,8 @@
 }
 
 #main-timeline .date-outer {
-    width: 125px;
-    height: 125px;
+    width: 8rem;
+    height: 8rem;
     font-size: 16px;
     text-align: center;
     margin: auto;
@@ -64,8 +64,8 @@
 
 #main-timeline .date-outer:after {
     content: "";
-    width: 125px;
-    height: 125px;
+    width: 8rem;
+    height: 8rem;
     margin: 0 auto;
     border-radius: 50%;
     position: absolute;
@@ -75,7 +75,7 @@
 }
 
 #main-timeline .date-outer:after {
-    border: 2px solid var(--dark-orange);
+    border: 0.2rem solid var(--dark-orange);
 }
 
 #main-timeline .date {
@@ -213,4 +213,10 @@
     #main-timeline .title {
         margin-bottom: 10px;
     }
+}
+
+#timeline-header h1 {
+	color: var(--dark-orange);
+	font-size: 3rem;
+	font-weight: bold;
 }

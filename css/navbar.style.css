@@ -1,0 +1,33 @@
+#navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: var(--cream-white);
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+#navbar .navbar-brand a {
+	padding: 0;
+	margin: 0 0.4rem;
+}
+
+#navbar #navbarNav .nav-item {
+	padding: 0;
+	margin: 0 0.4rem;
+}
+
+#navbar #navbarNav .nav-link.active {
+	border-bottom: 0.3rem solid var(--dark-orange);
+	color: black;
+}
+
+#navbar #navbarNav .nav-item:hover .nav-link {
+	color: black;
+}
+
+#navbar #navbarNav .nav-item .nav-link {
+	font-size: 1.2rem;
+	font-weight: bold;
+}

@@ -1,0 +1,20 @@
+#sponsor h1 {
+	color: var(--dark-orange);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#sponsor .sponsor-logo {
+	width: 100%;
+	background-color: var(--cream-orange);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	border: 1px solid black;
+	aspect-ratio: 1/1;
+}
+
+#sponsor .sponsor-logo img {
+	width: 80%;
+}

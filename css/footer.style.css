@@ -1,0 +1,37 @@
+#footer {
+	background-color: var(--dark-orange);
+	color: white;
+}
+
+#footer .row:first-child h1 {
+	padding-bottom: 0.6rem;
+	margin-bottom: 1rem;
+	border-bottom: 3px solid white;
+	display: inline-block;
+}
+
+#footer #contact-form {
+	background-color: burlywood;
+	border-radius: 3rem;
+	padding: 1rem;
+}
+
+#footer #contact-form h1 {
+	font-weight: bold;
+}
+
+#footer #contact-form input {
+	border-radius: 1rem;
+}
+
+#footer #contact-form textarea {
+	border-radius: 2rem;
+}
+
+#footer #contact-form button {
+	background-color: brown;
+	color: white;
+	font-weight: bold;
+	padding: 0.4rem 0.8rem;
+	border-radius: 1rem;
+}
