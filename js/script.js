@@ -96,7 +96,7 @@ $(document).ready(function() {
       if (filterValue === '*')
         return true;
       return $(this).data('category').split(' ').includes(filterValue);
-    }).show();
+    }).fadeIn(0.8 * 1000);
   });
   // End our works
 
@@ -129,7 +129,3 @@ $(document).ready(function() {
   });
   // End stats number animation
 });
-
-// TODOS:
-// 1. Add effect for filter our work
-// 2. Add effect for hero section

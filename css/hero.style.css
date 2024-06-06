@@ -35,3 +35,18 @@
 	background-color: orange;
 	border-color: orange;
 }
+
+#image-slider-home .carousel-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
+}
+
+#image-slider-home .carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#image-slider-home {
+	background-color: black;
+}
