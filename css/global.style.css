@@ -1,9 +1,11 @@
 :root {
 	--dark-orange: #b85d36;
 	--dark-red: #af2d03;
+	--dark-brown: #792e1e;
 	--cream-white: #ebe8e1;
 	--cream-orange: #d6cdb0;
 	--yellow: #f4dc3d;
+	--dark-yellow: #ee9e2e;
 }
 
 * {
@@ -21,7 +23,7 @@ body {
 	background-color: var(--cream-white);
 }
 
-@media (max-width: 991) {
+@media (max-width: 992) {
 	html {
 		font-size: 14px;
 	}

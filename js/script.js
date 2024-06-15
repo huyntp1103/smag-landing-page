@@ -129,3 +129,25 @@ $(document).ready(function() {
   });
   // End stats number animation
 });
+
+
+document.getElementById("myForm").onsubmit = function (e) {
+  e.preventDefault();
+
+  var url =
+    "https://docs.google.com/forms/d/e/1FAIpQLScaEsOkztJb6XcwRxlu442op3KR6HwHrwHVU1jy88WPDOr0vQ/formResponse";
+  var formData = new FormData(document.getElementById("myForm"));
+
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    body: formData,
+  })
+    .then((response) => {
+      document.getElementById("myForm").reset();
+      $('#myModal').modal('show');
+    })
+    .catch((error) => {
+      console.log("Error:", error);
+    });
+};
