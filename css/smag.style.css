@@ -1,0 +1,37 @@
+#smag h1 {
+	color: var(--dark-orange);
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+#smag .row:nth-child(2) {
+	display: flex;
+	align-items: center;
+}
+
+#smag .content-box {
+	text-align: justify;
+	font-size: 1.4rem;
+}
+
+#smag #stats .stats-number {
+	font-size: 4rem;
+	color: var(--dark-orange);
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 2rem 0;
+}
+
+#smag #stats div:first-child .stats-number {
+	color: var(--dark-yellow);
+}
+
+#smag #stats div:last-child .stats-number {
+	color: var(--dark-yellow);
+}
+
+#smag #stats .stats-description {
+	font-size: 1.2rem;
+}

@@ -132,6 +132,27 @@ $(document).ready(function() {
 document.getElementById("myForm").onsubmit = function (e) {
   e.preventDefault();
 
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const content = document.getElementById('content').value.trim();
+
+  if (!name || !content) {
+    alert('Vui lòng nhập đầy đủ tên và nội dung cần hỗ trợ!');
+    return;
+  }
+
+  if (!email && !phone) {
+    alert('Vui lòng nhập email hoặc số điện thoại!');
+    return;
+  }
+
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email && !emailPattern.test(email)) {
+    alert('Email không đúng định dạng!');
+    return;
+  }
+
   var url =
     "https://docs.google.com/forms/d/e/1FAIpQLScaEsOkztJb6XcwRxlu442op3KR6HwHrwHVU1jy88WPDOr0vQ/formResponse";
   var formData = new FormData(document.getElementById("myForm"));
