@@ -37,7 +37,7 @@
 }
 
 #our-works .our-works-info {
-	padding: 0 1rem;
+	padding: 1rem 1rem 0 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

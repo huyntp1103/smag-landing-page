@@ -160,7 +160,7 @@
 
     #main-timeline .timeline-content,
     #main-timeline .timeline:nth-child(2n) .timeline-content {
-        width: 95%;
+        width: 100%;
         text-align: center;
         padding: 10px 0;
         display: flex;

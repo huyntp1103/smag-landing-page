@@ -1,12 +1,12 @@
 #testimonials .carousel {
-	margin: 50px auto;
-	padding: 0 70px;
+	margin: 0 auto;
+	padding: 0 4rem;
 }
 
 #testimonials .carousel .item .img-box {
 	width: 100%;
 	margin: 0 auto;
-	padding: 15px;
+	padding: 1rem;
 	border-top: 1px solid var(--dark-orange);
 	border-bottom: 1px solid var(--dark-orange);
 	border-radius: 50%;
@@ -66,8 +66,8 @@
 }
 
 #testimonials .carousel-control i {
-	font-size: 68px;
-	line-height: 42px;
+	font-size: 4rem;
+	line-height: 2rem;
 	position: absolute;
 	display: inline-block;
 	color: var(--dark-orange);
