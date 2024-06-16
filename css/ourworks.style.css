@@ -24,11 +24,16 @@
 }
 
 #our-works .our-works-item {
-	height: 400px;
 	background-color: var(--dark-orange);
 	padding: 0;
 	flex: 1 1 calc(50% - 1rem);
 	border-radius: 0 0 2rem 2rem;
+}
+
+@media (max-width: 768px) {
+	#our-works .our-works-item {
+		flex: 1 1 100%;
+	}
 }
 
 #our-works .our-works-info {

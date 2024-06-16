@@ -3,12 +3,9 @@ $('.large-sponsor .owl-carousel').owlCarousel({
   margin: 10,
   nav: true,
   autoplay: true,
-  autoplayTimeout: 2 * 1000,
+  autoplayTimeout: 3 * 1000,
   responsive: {
     0: {
-      items: 1
-    },
-    576: {
       items: 2
     },
     768: {
@@ -28,12 +25,9 @@ $('.small-sponsor .owl-carousel').owlCarousel({
   margin: 10,
   nav: true,
   autoplay: true,
-  autoplayTimeout: 2 * 1000,
+  autoplayTimeout: 3 * 1000,
   responsive: {
     0: {
-      items: 3
-    },
-    576: {
       items: 4
     },
     768: {
@@ -61,7 +55,7 @@ $(document).ready(function() {
     event.preventDefault();
     var targetId = $(this).attr('href');
     var targetPosition = $(targetId).offset().top;
-    if (targetId !== '#image-slider-home' && targetId !== '#footer') {
+    if (targetId !== '#image-slider-home' || targetId !== '#footer') {
       targetPosition -= navHeight
     }
     $('html, body').animate({ scrollTop: targetPosition }, 1 * 1000);
@@ -128,6 +122,10 @@ $(document).ready(function() {
     observer.observe(this);
   });
   // End stats number animation
+
+  // Sponsor
+  $('.owl-nav').addClass('d-none');
+  // End sponsor
 });
 
 
