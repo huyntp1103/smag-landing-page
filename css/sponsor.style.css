@@ -1,17 +1,21 @@
-#sponsor h1 {
-	color: var(--dark-orange);
-	font-size: 2rem;
+#sponsor-wrapped {
+	background-color: black;
+}
+
+#sponsor-wrapped h1 {
+	color: var(--dark-yellow);
+	font-size: 1.6rem;
 	font-weight: bold;
 }
 
 #sponsor .sponsor-logo {
 	width: 100%;
-	background-color: var(--cream-orange);
+	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 1rem;
-	border: 1px solid black;
+	/* border: 0.2rem solid var(--dark-orange); */
 	aspect-ratio: 1/1;
 }
 

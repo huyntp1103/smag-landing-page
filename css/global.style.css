@@ -8,11 +8,24 @@
 	--dark-yellow: #ee9e2e;
 }
 
+/* styles.css */
+@font-face {
+    font-family: 'SVN Gotham';
+    src: url('../fonts/SVN-Gotham.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/SVN-Gotham.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/SVN-Gotham.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/SVN-Gotham.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/SVN-Gotham.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/SVN-Gotham.otf') format('opentype'); /* OpenType */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Helvetica", sans-serif;
+	font-family: 'SVN Gotham', 'Helvetica', sans-serif;
 }
 
 html {
@@ -23,13 +36,13 @@ body {
 	background-color: var(--cream-white);
 }
 
-@media (max-width: 992) {
+@media (max-width: 991px) {
 	html {
 		font-size: 14px;
 	}
 }
 
-@media (max-width: 480) {
+@media (max-width: 479px) {
 	html {
 		font-size: 12px;
 	}

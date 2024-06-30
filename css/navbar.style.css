@@ -19,7 +19,7 @@
 }
 
 #navbar #navbarNav .nav-link.active {
-	border-bottom: 0.3rem solid var(--dark-orange);
+	border-bottom: 0.2rem solid var(--dark-orange);
 	color: black;
 }
 

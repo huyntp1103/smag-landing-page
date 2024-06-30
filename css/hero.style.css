@@ -1,4 +1,4 @@
-.hero-section {
+/* .hero-section {
 	position: relative;
 	text-align: center;
 	height: 48.4vw;
@@ -37,16 +37,38 @@
 }
 
 #image-slider-home .carousel-item {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 1s ease-in-out, transform 0.2s ease-in-out;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: opacity 1s ease-in-out, transform 0.2s ease-in-out;
 }
 
 #image-slider-home .carousel-item.active {
-    opacity: 1;
-    transform: scale(1);
+	opacity: 1;
+	transform: scale(1);
 }
 
 #image-slider-home {
 	background-color: black;
+} */
+
+#home {
+	text-align: center;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	border-radius: 0;
 }
+
+#home video {
+	width: 85%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+@media (max-width: 1199px) {
+	#home video {
+	  width: 100%;
+	}
+  }

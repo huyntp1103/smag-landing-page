@@ -1,8 +1,8 @@
 #our-works .our-works-filter-button {
-	background-color: gray;
-	border: none;
-	border-radius: 1rem;
-	color: white;
+	background-color: transparent;
+	border: 0.2rem solid var(--dark-orange);
+	border-radius: 2rem;
+	color: var(--dark-orange);
 	padding: 0.6rem 1.2rem;
 	font-size: 1rem;
 	margin: 0 1rem;
@@ -15,6 +15,9 @@
 
 #our-works .our-works-filter-button.active {
 	background-color: var(--dark-orange);
+	border: 0.2rem solid var(--dark-orange);
+	font-weight: bold;
+	color: white;
 }
 
 #our-works .our-works-container {
@@ -24,10 +27,15 @@
 }
 
 #our-works .our-works-item {
-	background-color: var(--dark-orange);
+	background-color: white;
 	padding: 0;
 	flex: 1 1 calc(50% - 1rem);
-	border-radius: 0 0 2rem 2rem;
+	border-radius: 2rem;
+	border: 0.2rem solid var(--dark-orange);
+}
+
+#our-works .our-works-item img {
+	border-radius: 1.8rem;
 }
 
 @media (max-width: 768px) {
@@ -44,11 +52,11 @@
 }
 
 #our-works .our-works-description {
-	color: var(--yellow);
+	color: black;
 	font-size: 1.2rem;
 }
 
 #our-works .our-works-metadata {
 	text-align: right;
-	color: white;
+	color: black;
 }

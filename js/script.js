@@ -42,20 +42,23 @@ $('.small-sponsor .owl-carousel').owlCarousel({
   }
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Navbar
   let navHeight = $('#navbar').outerHeight(true);
-  $('#image-slider-home').css('padding-top', navHeight);
+  $('#home').css('padding-top', navHeight);
+  // $('#image-slider-home').css('padding-top', navHeight);
 
   $('#navbar .navbar-nav .nav-item .nav-link:first').addClass('active');
-  $('#navbar .navbar-nav .nav-item .nav-link').click(function(event) {
+  $('#navbar .navbar-nav .nav-item .nav-link').click(function (event) {
     $('#navbar .navbar-nav .nav-item .nav-link').removeClass('active');
     $(this).addClass('active');
 
-    event.preventDefault();
     var targetId = $(this).attr('href');
+    if (targetId !== 'https://huyntp1103.github.io/smag/outstanding-projects') {
+      event.preventDefault();
+    }
     var targetPosition = $(targetId).offset().top;
-    if (targetId !== '#image-slider-home' || targetId !== '#footer') {
+    if (targetId !== '#home' || targetId !== '#footer') {
       targetPosition -= navHeight
     }
     $('html, body').animate({ scrollTop: targetPosition }, 1 * 1000);
@@ -79,14 +82,14 @@ $(document).ready(function() {
   $('.our-works-info').height(infoHeight);
 
   $('.our-works-filter-button:first').addClass('active');
-  $('.our-works-filter-button').click(function() {
+  $('.our-works-filter-button').click(function () {
     $('.our-works-filter-button').removeClass('active');
     $(this).addClass('active');
   });
 
-  $('.filter-button-group').on('click', 'button', function() {
+  $('.filter-button-group').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
-    $('.our-works-item').hide().filter(function() {
+    $('.our-works-item').hide().filter(function () {
       if (filterValue === '*')
         return true;
       return $(this).data('category').split(' ').includes(filterValue);
@@ -94,9 +97,28 @@ $(document).ready(function() {
   });
   // End our works
 
+  // Timeline animation
+  let timelineObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, index) {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains('right-in')) {
+          entry.target.classList.add('slide-in-right');
+        } else {
+          entry.target.classList.add('slide-in-left');
+        }
+        timelineObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.timeline-content').forEach(function (element) {
+    timelineObserver.observe(element);
+  });
+  // End timeline animation
+
   // Stats number animation
-  let observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
+  let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var target = $(entry.target);
         var maxCount = Number(target.text().substring(0, target.text().length - 1));
@@ -118,7 +140,7 @@ $(document).ready(function() {
     });
   });
 
-  $('.stats-number').each(function() {
+  $('.stats-number').each(function () {
     observer.observe(this);
   });
   // End stats number animation
@@ -127,7 +149,6 @@ $(document).ready(function() {
   $('.owl-nav').addClass('d-none');
   // End sponsor
 });
-
 
 document.getElementById("myForm").onsubmit = function (e) {
   e.preventDefault();
