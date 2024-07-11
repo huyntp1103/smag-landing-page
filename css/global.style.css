@@ -9,14 +9,38 @@
 }
 
 /* styles.css */
+/* @font-face {
+    font-family: 'SVN Gotham';
+    src: url('../fonts/SVN-Gotham/SVN-Gotham.eot');
+    src: url('../fonts/SVN-Gotham/SVN-Gotham.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SVN-Gotham/SVN-Gotham.woff2') format('woff2'),
+         url('../fonts/SVN-Gotham/SVN-Gotham.woff') format('woff'),
+         url('../fonts/SVN-Gotham/SVN-Gotham.ttf') format('truetype'),
+         url('../fonts/SVN-Gotham/SVN-Gotham.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+} */
+
 @font-face {
     font-family: 'SVN Gotham';
-    src: url('../fonts/SVN-Gotham.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/SVN-Gotham.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/SVN-Gotham.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/SVN-Gotham.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/SVN-Gotham.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/SVN-Gotham.otf') format('opentype'); /* OpenType */
+    src: url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf');
+    src: url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf') format('embedded-opentype'),
+		 url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf') format('woff2'),
+         url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf') format('woff'),
+         url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf') format('truetype'),
+         url('../fonts/SVN-Gotham-Bold/SVN-Gotham-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN Gotham';
+    src: url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf'); /* IE9 Compat Modes */
+    src: url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('woff'), /* Modern Browsers */
+         url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/SVN-Gotham-Book/SVN-Gotham-Book.otf') format('opentype'); /* OpenType */
     font-weight: normal;
     font-style: normal;
 }
