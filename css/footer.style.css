@@ -13,16 +13,16 @@
 
 #footer .head-info {
 	font-size: 1.2rem;
-	font-weight: bolder;
 }
 
 #footer .head-info p:first-child {
 	color: var(--dark-yellow);
+	font-weight: bold;
 }
 
 #footer #contact-form {
 	background-image: linear-gradient(to bottom right, #e9a16d, #725620);
-	border-radius: 3rem;
+	border-radius: 2rem;
 	padding: 1.6rem;
 }
 

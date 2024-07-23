@@ -11,7 +11,14 @@
 
 #smag .content-box {
 	text-align: justify;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
+	font-style: italic;
+}
+
+#smag #stats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 #smag #stats div {
@@ -19,6 +26,8 @@
 	background-image: url('../img/stats-background.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+	flex: 1 1 calc(33.3% - 1rem);
+	border-radius: 2rem;
 }
 
 #smag #stats .stats-number {
@@ -31,4 +40,19 @@
 
 #smag #stats .stats-description {
 	font-size: 1.2rem;
+}
+
+@media (max-width: 991px) {
+	#smag #stats .stats-number {
+		font-size: 4rem;
+	}
+}
+
+@media (max-width: 767px) {
+	#smag #stats div {
+		flex: 1 1 100%;
+	}
+	#smag #stats .stats-number {
+		font-size: 6rem;
+	}
 }

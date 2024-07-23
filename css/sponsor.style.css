@@ -4,9 +4,9 @@
 }
 
 #sponsor-wrapped h1 {
-	color: var(--dark-yellow);
+	color: white;
 	font-size: 1.6rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 #sponsor .sponsor-logo {
