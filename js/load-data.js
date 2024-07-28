@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON('../json/testimonials.json', function (data) {
+    $.getJSON('jsons/testimonials.json', function (data) {
         const testimonialContainer = $('#testimonials .carousel-inner');
         data.forEach(function (testimonial, index) {
             const testimonialDiv = $(`
@@ -44,7 +44,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $.getJSON('../json/timeline.json', function (data) {
+    $.getJSON('jsons/timeline.json', function (data) {
         const timelineContainer = $('#main-timeline');
         data.forEach(function (timeline, index) {
             const timelineDiv = $(`
@@ -63,7 +63,6 @@ $(document).ready(function () {
         `);
             timelineContainer.append(timelineDiv);
         });
-
 
         // Timeline animation
         let timelineObserver = new IntersectionObserver(function (entries) {
