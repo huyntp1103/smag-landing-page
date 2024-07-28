@@ -18,6 +18,35 @@ $(document).ready(function() {
     }
   });
   // End navbar
+
+  // Stats number animation
+  let observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var target = $(entry.target);
+        var maxCount = Number(target.text().substring(0, target.text().length - 1));
+        var suffix = target.text().substring(target.text().length - 1);
+        var currentCount = 0;
+        var incrementTime = 2 * 1000 / maxCount;
+
+        function updateCount() {
+          target.text(currentCount + suffix);
+          if (currentCount < maxCount) {
+            currentCount++;
+            setTimeout(updateCount, incrementTime);
+          }
+        }
+
+        updateCount();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  $('.outstanding-number').each(function () {
+    observer.observe(this);
+  });
+  // End stats number animation
 });
 
 document.getElementById("myForm").onsubmit = function (e) {

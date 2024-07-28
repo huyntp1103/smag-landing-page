@@ -46,7 +46,6 @@ $(document).ready(function () {
   // Navbar
   let navHeight = $('#navbar').outerHeight(true);
   $('#home').css('padding-top', navHeight);
-  // $('#image-slider-home').css('padding-top', navHeight);
 
   $('#navbar .navbar-nav .nav-item .nav-link:first').addClass('active');
   $('#navbar .navbar-nav .nav-item .nav-link').click(function (event) {
@@ -64,16 +63,6 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: targetPosition }, 1 * 1000);
   });
   // End navbar
-
-  $('#image-slider-home').carousel({
-    interval: 8 * 1000,
-    pause: false
-  });
-
-  $('#image-slider-about').carousel({
-    interval: 5 * 1000,
-    pause: false
-  });
 
   // Our works
   let containerHeight = $('.our-works-item').height();
@@ -97,25 +86,6 @@ $(document).ready(function () {
   });
   // End our works
 
-  // Timeline animation
-  let timelineObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry, index) {
-      if (entry.isIntersecting) {
-        if (entry.target.classList.contains('right-in')) {
-          entry.target.classList.add('slide-in-right');
-        } else {
-          entry.target.classList.add('slide-in-left');
-        }
-        timelineObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  document.querySelectorAll('.timeline-content').forEach(function (element) {
-    timelineObserver.observe(element);
-  });
-  // End timeline animation
-
   // Stats number animation
   let observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -124,7 +94,7 @@ $(document).ready(function () {
         var maxCount = Number(target.text().substring(0, target.text().length - 1));
         var suffix = target.text().substring(target.text().length - 1);
         var currentCount = 0;
-        var incrementTime = 3 * 1000 / maxCount;
+        var incrementTime = 2 * 1000 / maxCount;
 
         function updateCount() {
           target.text(currentCount + suffix);
@@ -148,6 +118,13 @@ $(document).ready(function () {
   // Sponsor
   $('.owl-nav').addClass('d-none');
   // End sponsor
+
+  // Testimonial
+  $('#testimonial-carousel').carousel({
+    interval: 8 * 1000,
+    pause: false
+  });
+  // End testimonial
 });
 
 document.getElementById("myForm").onsubmit = function (e) {
@@ -170,7 +147,7 @@ document.getElementById("myForm").onsubmit = function (e) {
 
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (email && !emailPattern.test(email)) {
-    alert('Email không đúng định dạng!');
+    alert('Vui lòng nhập email đúng định dạng!');
     return;
   }
 

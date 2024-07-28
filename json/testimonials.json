@@ -1,0 +1,29 @@
+[
+    {
+        "avatarUrl": "img/testimonials/Feedback-1.jpg",
+        "name": "Anh Phát",
+        "role": "Partner Manager",
+        "company": "Zalo",
+        "projectPrefix": "Dự án Hỗ trợ xây dựng",
+        "project": "Zalo Video Network",
+        "quote": "Tụi em tâm huyết mãnh liệt và làm việc rất chuyên nghiệp. Team chịu khó thức đêm vì job, vượt cả kỳ vọng của bên anh luôn. Mong sẽ có thêm nhiều cơ hội làm việc cùng tụi em nha!"
+    },
+    {
+        "avatarUrl": "img/testimonials/Feedback-2.jpg",
+        "name": "Anh Nam",
+        "role": "Ex-Planner",
+        "company": "T&A Ogilvy",
+        "projectPrefix": "Dự án thu thập form khảo sát",
+        "project": "",
+        "quote": "Anh thấy team SMAG triển khai kế hoạch và thực thi khảo sát rất nhanh, lúc nào cũng sẽ vượt kì vọng về thời gian và KPIs đã đề ra. Rất mong SMAG ngày càng phát triển hơn nữa nhé!"
+    },
+    {
+        "avatarUrl": "img/testimonials/Feedback-3.jpg",
+        "name": "Chị Nhật",
+        "role": "Đại diện Marketing Team",
+        "company": "Levoit Vietnam",
+        "projectPrefix": "Dự án Hỗ trợ xây dựng",
+        "project": "Zalo Video Network",
+        "quote": "Team phối hợp làm việc và hỗ trợ công ty rất tốt. Các em phản hồi rất nhanh và điều chỉnh linh hoạt theo nhận xét của công ty. Hi vọng sẽ có cơ hội hợp tác cùng tụi em trong các dự án khác nữa nhé!"
+    }
+]

@@ -1,0 +1,57 @@
+#outstanding-projects span, p {
+	font-size: 1.2rem;
+}
+
+#outstanding-projects .client-title {
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--dark-orange);
+}
+
+#outstanding-projects .project-tag {
+	font-weight: bold;
+	color: var(--dark-yellow);
+}
+
+#outstanding-projects .sub-title {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: var(--dark-orange);
+}
+
+#outstanding-projects .outstanding-number {
+	font-size: 5rem;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--dark-orange);
+	margin-bottom: 0;
+}
+
+#outstanding-projects .outstanding-stats {
+	padding: 0 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+#outstanding-projects .outstanding-stats div {
+	flex: 1 1 calc(33.3% - 2rem);
+	/* background-color: var(--dark-orange); */
+	border-radius: 2rem;
+	border: 0.2rem solid var(--dark-orange);
+}
+
+#outstanding-projects .horizontal-line {
+	background-color: var(--dark-orange);
+	width: 50%;
+	height: 0.2rem;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+@media (max-width: 767px) {
+	#outstanding-projects .outstanding-stats div {
+		flex: 1 1 100%;
+	}
+}
