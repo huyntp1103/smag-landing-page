@@ -34,6 +34,11 @@
 	border: 0.1rem solid var(--dark-orange);
 }
 
+#our-works .fake-item {
+	background-color: inherit;
+	border: inherit;
+}
+
 #our-works .our-works-item img {
 	border-radius: 1.8rem;
 }
