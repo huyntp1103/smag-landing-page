@@ -53,7 +53,7 @@ $(document).ready(function () {
     $(this).addClass('active');
 
     var targetId = $(this).attr('href');
-    if (targetId !== 'https://huyntp1103.github.io/smag/outstanding-projects') {
+    if (targetId !== '/outstanding-projects') {
       event.preventDefault();
     }
     var targetPosition = $(targetId).offset().top;

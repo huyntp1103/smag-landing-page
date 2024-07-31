@@ -15,7 +15,7 @@
 
 #navbar #navbarNav .nav-item {
 	padding: 0;
-	margin: 0 0.3rem;
+	margin: 0 0.4rem;
 }
 
 #navbar #navbarNav .nav-link.active {
@@ -30,4 +30,16 @@
 #navbar #navbarNav .nav-item .nav-link {
 	font-size: 1.2rem;
 	font-weight: bold;
+}
+
+@media (max-width: 1199px) {
+	#navbar #navbarNav .nav-item .nav-link {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1079px) {
+	#navbar #navbarNav .nav-item {
+		margin: 0 0.2rem;
+	}
 }

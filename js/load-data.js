@@ -4,8 +4,8 @@ $(document).ready(function () {
         data.forEach(function (testimonial, index) {
             const testimonialDiv = $(`
                 <div class="item carousel-item ${index === 0 ? 'active' : ''}">
-                <div class="row">
-                  <div class="col-md-4">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 mb-4">
                     <div class="img-box">
                       <img
                         style="
@@ -16,17 +16,13 @@ $(document).ready(function () {
                         src="${testimonial.avatarUrl}" alt="${testimonial.company}" />
                     </div>
                   </div>
-                  <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
-                    <p class="overview">
-                      ${testimonial.name} - ${testimonial.role} <strong>${testimonial.company}</strong>
+                  <div class="col-lg-8 d-flex flex-column">
+                    <p class="text-center mb-4">
+                      <span class="overview">${testimonial.name} - ${testimonial.role} <strong>${testimonial.company}</strong></span>
                     </p>
-                    <p class="project">
-                      ${testimonial.projectPrefix} <strong>${testimonial.project}</strong>
+                    <p class="text-center">
+                      <span class="project">${testimonial.projectPrefix} <strong>${testimonial.project}</strong></span>
                     </p>
-                  </div>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-lg-8 col-md-12">
                     <p class="quote">“</p>
                     <p class="testimonial">
                       ${testimonial.quote}
