@@ -37,7 +37,6 @@
 
 #outstanding-projects .outstanding-stats div {
 	flex: 1 1 calc(33.3% - 2rem);
-	/* background-color: var(--dark-orange); */
 	border-radius: 2rem;
 	border: 0.2rem solid var(--dark-orange);
 	padding: 0 1rem;

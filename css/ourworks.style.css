@@ -72,12 +72,12 @@
 	
 #our-works .outstanding:hover {
 	box-shadow:
-	1px 1px var(--dark-orange),
 	2px 2px var(--dark-orange),
 	3px 3px var(--dark-orange),
 	4px 4px var(--dark-orange),
 	5px 5px var(--dark-orange),
-	6px 6px var(--dark-orange);
+	6px 6px var(--dark-orange),
+	7px 7px var(--dark-orange);
 	transform: translateX(-0.4rem);
 	transition: .5s ease;
 	cursor: pointer;

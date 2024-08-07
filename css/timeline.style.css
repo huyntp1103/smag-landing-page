@@ -95,16 +95,6 @@
     margin-bottom: 1rem;
 }
 
-
-/* #main-timeline .timeline .description-image {
-    height: 15rem;
-    float: left;
-}
-
-#main-timeline .timeline:nth-child(2n) .description-image {
-    float: right;
-} */
-
 #main-timeline .timeline:nth-child(2n) .date-content {
     float: right;
 }
