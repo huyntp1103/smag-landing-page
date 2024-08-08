@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Navbar
   let navHeight = $('#navbar').outerHeight(true);
   $('#outstanding-projects').css('padding-top', navHeight);
 
   $('#navbar .navbar-nav .nav-item .nav-link:first').addClass('active');
-  $('#navbar .navbar-nav .nav-item .nav-link').click(function(event) {
+  $('#navbar .navbar-nav .nav-item .nav-link').click(function (event) {
     $('#navbar .navbar-nav .nav-item .nav-link').removeClass('active');
     $(this).addClass('active');
 
@@ -47,6 +47,38 @@ $(document).ready(function() {
     observer.observe(this);
   });
   // End stats number animation
+});
+
+$(document).ready(function () {
+  // Slide right animation
+  const slideRightObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-right');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.content-slide-right').forEach(function (element) {
+    slideRightObserver.observe(element);
+  });
+  // End slide right animation
+
+  // Slide right animation
+  const slideLeftObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-left');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.content-slide-left').forEach(function (element) {
+    slideLeftObserver.observe(element);
+  });
+  // End slide right animation
 });
 
 document.getElementById("myForm").onsubmit = function (e) {

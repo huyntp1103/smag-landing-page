@@ -11,6 +11,7 @@
 
 #our-works .our-works-filter-button:hover {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 #our-works .our-works-filter-button.active {

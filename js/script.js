@@ -86,6 +86,20 @@ $(document).ready(function () {
   });
   // End our works
 
+  // Sponsor
+  $('.owl-nav').addClass('d-none');
+  // End sponsor
+
+  // Testimonial
+  $('#testimonial-carousel').carousel({
+    interval: 8 * 1000,
+    pause: false
+  });
+  // End testimonial
+});
+
+// Observe animation
+$(document).ready(function () {
   // Stats number animation
   let observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -115,16 +129,20 @@ $(document).ready(function () {
   });
   // End stats number animation
 
-  // Sponsor
-  $('.owl-nav').addClass('d-none');
-  // End sponsor
+  // Slide up animation
+  const slideUpObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slide-up');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
 
-  // Testimonial
-  $('#testimonial-carousel').carousel({
-    interval: 8 * 1000,
-    pause: false
+  document.querySelectorAll('.content-slide-up').forEach(function (element) {
+    slideUpObserver.observe(element);
   });
-  // End testimonial
+  // End slide up animation
 });
 
 document.getElementById("myForm").onsubmit = function (e) {
