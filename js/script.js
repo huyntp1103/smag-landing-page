@@ -3,7 +3,8 @@ $('.large-sponsor .owl-carousel').owlCarousel({
   margin: 10,
   nav: true,
   autoplay: true,
-  autoplayTimeout: 3 * 1000,
+  autoplayTimeout: 2 * 1000,
+  smartSpeed: 3000,
   responsive: {
     0: {
       items: 2
@@ -25,7 +26,8 @@ $('.small-sponsor .owl-carousel').owlCarousel({
   margin: 10,
   nav: true,
   autoplay: true,
-  autoplayTimeout: 3 * 1000,
+  autoplayTimeout: 2 * 1000,
+  smartSpeed: 3000,
   responsive: {
     0: {
       items: 4
