@@ -101,7 +101,7 @@ document.getElementById("myForm").onsubmit = function (e) {
 
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (email && !emailPattern.test(email)) {
-    alert('Email không đúng định dạng!');
+    alert('Vui lòng nhập email đúng định dạng!');
     return;
   }
 
