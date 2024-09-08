@@ -81,11 +81,10 @@ $(document).ready(function () {
   $('.filter-button-group').on('click', 'button', function () {
     var filterValue = $(this).attr('data-filter');
     $('.our-works-item').hide().filter(function () {
-      if (filterValue === '*')
-        return true;
       return $(this).data('category').split(' ').includes(filterValue);
     }).fadeIn(0.8 * 1000);
   });
+  $('.our-works-filter-button:first').click();
   // End our works
 
   // Sponsor
