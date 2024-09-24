@@ -94,8 +94,8 @@
 	line-height: 2rem;
 	margin-right: 0.2rem;
 	transition: background-color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
 	background-color: white;
-  }
+}
