@@ -1,0 +1,16 @@
+# Block access to CSS, JS, and Fonts folders for all crawlers
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /img/
+
+# Allow access to HTML files
+Allow: /index.html
+Allow: /outstanding-projects.html
+
+# Block access to JSON files (if they contain private or internal data)
+Disallow: /jsons/
+
+# Sitemap (if you have one)
+# Sitemap: https://www.yourdomain.com/sitemap.xml
